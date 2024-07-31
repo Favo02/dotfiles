@@ -1,0 +1,7 @@
+[user]
+    email = luca.favini.02@gmail.com
+    name = Luca Favini
+[init]
+    defaultBranch = main
+[core]
+    editor = nano
