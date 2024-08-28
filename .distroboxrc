@@ -1,0 +1,3 @@
+container_manager="podman"
+container_home_prefix="$HOME/distrobox/"
+container_init_hook="/home/favo/distrobox-init.sh"
