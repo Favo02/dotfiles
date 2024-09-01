@@ -115,7 +115,7 @@ fi
 [[ -f /usr/bin/bat ]] && alias cat="bat"
 [[ -f /usr/bin/delta ]] && alias diff="delta"
 [[ -f /usr/bin/xdg-open ]] && alias open="xdg-open"
-[[ -f /usr/bin/xdg-open ]] && alias open="xdg-open"
+[[ -f /usr/bin/pypy3.10 ]] && alias pypy="pypy3.10"
 
 # History settings
 HISTFILE="$HOME/.zsh_history"
