@@ -116,6 +116,7 @@ fi
 [[ -f /usr/bin/delta ]] && alias diff="delta"
 [[ -f /usr/bin/xdg-open ]] && alias open="xdg-open"
 [[ -f /usr/bin/pypy3.10 ]] && alias pypy="pypy3.10"
+[[ -f /usr/bin/git-filter-repo.py ]] && alias git-filter-repo="python /usr/bin/git-filter-repo.py"
 
 # History settings
 HISTFILE="$HOME/.zsh_history"
