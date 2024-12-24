@@ -8,8 +8,13 @@ Required installed packages:
 - [`delta`](https://github.com/dandavison/delta): better `diff`
 - [`exa`](https://github.com/ogham/exa): better `ls`
 - [`fzf`](https://github.com/junegunn/fzf): fuzzy finder
+- [`zsh-z`](https://github.com/agkozak/zsh-z): quick folder jumper
 - `git`: version control :)
 - `nano`: I'm not a vim user, sorry :(
+- [`zsh`](https://en.wikipedia.org/wiki/Z_shell): shell
+- [`oh-my-zsh`](https://ohmyz.sh/): zsh configuration manager
+- [`powerlevel10k`](https://github.com/romkatv/powerlevel10k): zsh theme
+- [`distrobox`](https://distrobox.it/): containers manager (sorta, see [#Distrobox](#distrobox))
 
 Files that should be in `dotfiles` folder:
 
