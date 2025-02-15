@@ -8,10 +8,10 @@ fi
 PYENV_NAME=$1
 PYENV_PATH=$HOME/pyenvs/$PYENV_NAME
 
-echo "Crating new python virtual environment (venv) for $1..."
+echo "Creating new python virtual environment (venv) for $1..."
 
 python -m venv $PYENV_PATH
 
 ln -s $PYENV_PATH ./venv
 
-echo "venv created"
+echo "Venv created, activate using 'source venv/bin/activate'"
