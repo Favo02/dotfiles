@@ -25,7 +25,8 @@ Files that should be in `dotfiles` folder:
 - `.z`: [zsh-z](https://github.com/agkozak/zsh-z) cache
 - `.zsh_history`: shell history
 - `.zshrc`: [zsh](https://www.zsh.org/) config file
-- `distrobox-init.sh`: script to setup newly created cloned distrobox containers
+- `distrobox-init.sh`: script to setup newly created cloned distrobox containers (see [#Distrobox](#distrobox))
+- `pyenv-init.sh`: script to create new python virtual environments (see [#Python-venv](#python-venv))
 
 All these files needs a symlink to home folder (`~/`): `ln -f -s /home/<USER>/<PATH_TO_DOTFILES>/<FILE> ~/`
 
@@ -54,3 +55,23 @@ I try to keep my installations as clean as possible, so I use [distrobox](https:
   `distrobox create -c [fedora | debian] -n <container_name>`
 
 Distrobox will take care of copying dotfiles and creating a custom separated home directory (thanks to `.distroboxrc` config).
+
+## Python venv
+
+Python installation on the host machine is kept to the minimum, `pip` is not even installed.
+Each time dependencies are needed, a new virtual environment is created with `pyenv-init.sh` script, aliased in `.zshrc` to `venv`.
+
+All python environments are stored in `~/pyenvs` folder, and this path is used to configure editors and LSP (`python.venvFolders` in VSCode), allowing it to be selected by jupyter notebooks.
+A symlink to the current folder is then created.
+
+- To create a new python environment:
+
+  `venv <env_name>`
+
+- To activate the environment (from the folder containing the symlink):
+
+  `source venv/bin/activate`
+
+- To deactivate the environment:
+
+  `deactivate`

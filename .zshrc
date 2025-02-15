@@ -152,3 +152,6 @@ function zsh_directory_name() {
 
 # Run ls when changing dir
 chpwd() { ls; }
+
+# Python venv initializer
+alias venv="$HOME/pyenv-init.sh"
