@@ -155,3 +155,20 @@ chpwd() { ls; }
 
 # Python venv initializer
 alias venv="$HOME/pyenv-init.sh"
+
+# Utilities
+# inspired by https://evanhahn.com/scripts-i-wrote-that-i-use-all-the-time/
+alias copy=wl-copy
+alias paste=wl-paste
+alias rm="gio trash"
+notify() {
+  local ts
+  ts="$(date '+%Y-%m-%d %H:%M:%S')"
+  if (( $# == 0 )); then
+    command notify-send "Done" "$ts"
+  elif (( $# == 1 )); then
+    command notify-send "$1" "$ts"
+  else
+    command notify-send "$1" "$2 — $ts" "${@:3}"
+  fi
+}
