@@ -111,7 +111,7 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-[[ -f /usr/bin/exa ]] && alias ls="exa --color always -1 -a --icons"
+[[ -f /usr/bin/eza ]] && alias ls="eza --color always -1 -a --icons"
 [[ -f /usr/bin/bat ]] && alias cat="bat"
 [[ -f /usr/bin/delta ]] && alias diff="delta"
 [[ -f /usr/bin/xdg-open ]] && alias open="xdg-open"
@@ -122,7 +122,7 @@ fi
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000000
 SAVEHIST=10000000
-HISTORY_IGNORE="(ls|cd|pwd|exit|cd|bat|exa|z|fzf)*"
+HISTORY_IGNORE="(ls|cd|pwd|exit|cd|bat|exa|eza|z|fzf)*"
 
 setopt EXTENDED_HISTORY      # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY    # Write to the history file immediately, not when the shell exits.

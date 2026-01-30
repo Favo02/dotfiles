@@ -6,7 +6,7 @@ Required installed packages:
 
 - [`bat`](https://github.com/sharkdp/bat): better `cat`
 - [`delta`](https://github.com/dandavison/delta): better `diff`
-- [`exa`](https://github.com/ogham/exa): better `ls`
+- [`eza`](https://github.com/eza-community/eza): better `ls`
 - [`fzf`](https://github.com/junegunn/fzf): fuzzy finder
 - [`zsh-z`](https://github.com/agkozak/zsh-z): quick folder jumper
 - `git`: version control :)
@@ -34,7 +34,7 @@ All these files needs a symlink to home folder (`~/`): `ln -f -s /home/<USER>/<P
 
 Aliases in `.zshrc` (open the config for arguments):
 
-- `ls` to `exa`
+- `ls` to `eza`
 - `cat` to `bat`
 - `diff` to `delta`
 - `xdg-open` to `open`

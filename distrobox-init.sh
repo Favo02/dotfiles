@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Packages that should be installed: nano, git, exa, bat, fzf, git-delta
+# Packages that should be installed: nano, git, eza, bat, fzf, git-delta
 # Clone the already set up distroboxes "fedora" (dnf based) and "debian" (apt based)
 
 echo "Creating dotfiles symlinks..."
